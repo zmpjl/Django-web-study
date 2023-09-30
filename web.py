@@ -11,5 +11,10 @@ def index():
     # Flask内部会自动打开这个文件，并读取内容，将内容给用户返回
     # 默认：去当前项目目录的templates文件夹找
     return render_template("index.html")
+
+@app.route("/get/news")
+def get_news():
+    return render_template("getnews.html")
+
 if __name__ == '__main__':
-    app.run()
+    app.run()# 在此定义主机名和端口host=“”,port=8000
