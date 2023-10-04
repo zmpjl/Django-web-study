@@ -15,6 +15,8 @@ def index():
 @app.route("/get/news")
 def get_news():
     return render_template("getnews.html")
-
+@app.route("/register")
+def register():
+    return render_template("register.html")
 if __name__ == '__main__':
     app.run()# 在此定义主机名和端口host=“”,port=8000
