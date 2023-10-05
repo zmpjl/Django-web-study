@@ -1,0 +1,14 @@
+.xx{
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 600;
+
+    font-family: fangsong;
+
+    text-align: center;
+    line-height:100px;
+
+    height: 100px;
+    width: 250px;
+    border: 1px solid brown;
+}
