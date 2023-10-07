@@ -134,19 +134,14 @@
         .news .channel .item a:hover{
             opacity: 1;
         }
-        .app{
-            position: relative
+        .back{
+          position: fixed;
+          width: 60px;
+          height: 60px;
+          border: 1px solid black;
+          left: 0;
+          top: 0;
         }
-        .app .download{
-            position: absolute;
-            height: 100px;
-            width: 100px;
-            display: none;
-        }
-        .app:hover .download{
-            display: block;
-        }
-
 
     </style>
 </head>
@@ -159,11 +154,6 @@
                 <a href="https://www.mi.com">云服务</a>
                 <a href="https://www.mi.com">有品</a>
                 <a href="https://www.mi.com">开放平台</a>
-                <a href="https://www.mi.com" class="app">下载app
-                    <div class="download" style="top:45px;left: -25px">
-                         <img  src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1">
-                    </div>
-                </a>
             </div>
             <div class="account">
                 <a>登录</a>
@@ -253,5 +243,6 @@
         <div style="clear: both"></div>
     </div>
     </div>
+    <div class="back"></div>
 </body>
 </html>
