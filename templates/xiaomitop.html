@@ -7,6 +7,8 @@
         body{
             /* 去掉body的边距 */
             margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
         }
         .header{
 
@@ -26,8 +28,6 @@
         .header .account{
             float:right;
             color: white;
-
-
         }
         /* header class 下的标签 a 自动应用这个样式 */
         .header a{
@@ -37,17 +37,64 @@
             font-size: 12px;
             margin-right: 5px;
         }
+        .header .menu a{
+            text-decoration: none;
+        }
+        .header .menu a:hover{
+        color: white;
+        }
+        .sub-header{
+
+
+      }
+
+        .sub-header .ht{
+            height: 100px;
+            margin: 0 auto;
+          }
+        .sub-header .logo{
+            width: 234px;
+            /*border: 1px solid blue;*/
+            float: left;
+          }
+        .sub-header .logo a{
+
+              margin-top: 22px;
+              display: inline-block
+          }
+        .sub-header .logo a img{
+        height: 56px;
+        width: 56px;
+      }
+        .sub-header .menu-list{
+            float: left;
+            line-height: 100px;
+          }
+        .sub-header .menu-list a{
+            color: #333333;
+            font-size: 16px;
+            text-decoration: none;
+
+            padding: 0 10px;
+            display: inline-block;
+          }
+        .sub-header .menu-list a:hover{
+            color: #ff6700;
+          }
+        .sub-header .search{
+            float: right;
+          }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="container">
             <div class="menu">
-                <a>小米商城</a>
-                <a>MIUI</a>
-                <a>云服务</a>
-                <a>有品</a>
-                <a>开放平台</a>
+                <a href="https://www.mi.com">小米商城</a>
+                <a href="https://www.mi.com">MIUI</a>
+                <a href="https://www.mi.com">云服务</a>
+                <a href="https://www.mi.com">有品</a>
+                <a href="https://www.mi.com">开放平台</a>
             </div>
             <div class="account">
                 <a>登录</a>
@@ -58,5 +105,25 @@
         </div>
 
     </div>
+    <div class="sub-header">
+      <div class="container" >
+        <div class="ht logo">
+          <!--a标签是行内标签，默认设置高度，边距无效   -> 可以设置为块级标签或者块级行内标签 -->
+          <a href="https://www.mi.com" >
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/s02.mifile.cn/assets/static/image/logo-mi2.png" alt="">
+          </a>
+        </div>
+        <div class="ht menu-list">
+          <a href="http://www.mi.com">Xiaomi手机</a>
+          <a href="http://www.mi.com">Redmi手机</a>
+          <a href="http://www.mi.com">电视</a>
+          <a href="http://www.mi.com">笔记本</a>
+          <a href="http://www.mi.com">平板</a>
+        </div>
+        <div class="ht search"></div>
+        <div style="clear: both"></div>
+      </div>
+    </div>
+
 </body>
 </html>
