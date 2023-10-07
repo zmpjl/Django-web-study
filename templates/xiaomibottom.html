@@ -13,6 +13,11 @@
         img{
           height: 100%;
           width: 100%;
+
+        }
+
+        .left{
+            float: left;
         }
         .header{
 
@@ -91,14 +96,46 @@
           width: 1226px;
           height: 460px;
         }
+        .news {
+            margin-top: 14px;
+        }
         .news .channel{
-            width: 234px;
-            height: 170px;
+            width: 228px;
+            height: 164px;
+            padding: 3px;
+            background-color: #665e57;
         }
         .news .list-item{
             width: 316px;
             height: 170px;
         }
+        .news .channel .item{
+            height: 82px;
+            width: 76px;
+            float: left;
+            text-align: center;
+        }
+        .news .channel .item img{
+            height: 24px;
+            width: 24px;
+            display:  block;
+            margin: 0 auto 4px;
+        }
+        .news  .channel .item a{
+            display: inline-block;
+            font-size: 12px;
+            padding-top: 18px;
+            /*超链接取消下换线*/
+            text-decoration: none;
+            color: #fff;
+            /*透明度调整 */
+            opacity: 0.7;
+        }
+        .news .channel .item a:hover{
+            opacity: 1;
+        }
+
+
     </style>
 </head>
 <body>
@@ -148,12 +185,56 @@
     </div>
     <div class="news">
       <div class="container">
-        <div class="channel"></div>
-        <div class="list-item"></div>
-        <div class="list-item"></div>
-        <div class="list-item"></div>
-      </div>
-      </div>
+        <div class="channel left">
+            <div class="item left">
+                <a href="https://www.mi.com/" >
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48" >
+                    <div>保障服务</div>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.mi.com/">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48">
+                    <div>企业团购</div>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.mi.com/">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48">
+                    <div>F码通道</div>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.mi.com/">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48">
+                    <div>米粉卡</div>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.mi.com/">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48">
+                    <div>以旧换新</div>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.mi.com/">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48">
+                    <div>话费充值</div>
+                </a>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="list-item left" style="margin-left: 14px">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/029f7790f2a2816aa7c0d205b25dcef0.jpeg?w=632&h=340"  alt="">
+        </div>
+        <div class="list-item left" style="margin-left: 15px">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dede2520f8dfff9c9b690af498cafe8.jpg?w=632&h=340" >
+        </div>
+        <div class="list-item left" style="margin-left: 15px">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1ac77590368ff636d0b4f6a988133f55.png?w=632&h=340" >
+        </div>
+        <div style="clear: both"></div>
+    </div>
     </div>
 </body>
 </html>
