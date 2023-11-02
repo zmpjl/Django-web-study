@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<span id="txt">欢迎云南大学位临指导</span>
+<input type="text" placeholder="请输入欢迎词" id="txtuser">
+<input type="button" value="点击欢迎" onclick="addHelloInfo()" ondblclick="helloInfo()">
+<ul id="hello">
+
+</ul>
+<script type="text/javascript">
+    function helloInfo() {
+        var newtag = document.createElement("li")
+        newtag.innerText = "欢迎欢迎，热烈欢迎"
+        var parentTag = document.getElementById("hello")
+        parentTag.appendChild(newtag)
+    }
+
+    function show() {
+        // 去HTML中找到某个标签并获取其内容。DOM
+        var tag = document.getElementById("txt");
+        var dataString = tag.innerText;
+        // 动态化,把文本中第一个字放到文本最后
+        var firstChar = dataString[0];
+        var otherChar = dataString.substring(1, dataString.length);
+        var newString = otherChar + firstChar;
+        // 在HTML中更新
+        tag.innerText = newString;
+    }
+
+    function addHelloInfo() {
+        //找到输入标签
+        var txtTag = document.getElementById("txtuser")
+        var newString = txtTag.value;
+        //获取input内容
+        var newTag = document.createElement("li")
+        newTag.innerText = newString;
+        //判断用户输入是否为空，只有不为空才能继续
+        if (newString.length > 0) {
+            //将标签添加到ul中
+            var parentTag = document.getElementById("hello")
+            parentTag.appendChild(newTag)
+            // 将input框清空
+            txtTag.value = "";
+        }
+        else {
+            alert("输入不能为空")
+        }
+
+    }
+
+    // js中的一个定时器
+    setInterval(show, 1000)
+</script>
+</body>
+</html>
